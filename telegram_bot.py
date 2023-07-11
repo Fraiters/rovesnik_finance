@@ -17,7 +17,6 @@ class TelegramBot:
     db = ExpensesDb()
 
     async def on_startup(self, _):
-        print('Бот вышел в онлайн')
         self.db.create_table_reports()
 
     def run(self):

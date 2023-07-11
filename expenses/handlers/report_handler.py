@@ -126,7 +126,7 @@ class ReportHandler:
             await state.finish()
 
     def registration(self, dp: Dispatcher):
-        """Регистрация хендлеров для клиента"""
+        """Регистрация хендлеров для отчетов"""
         dp.register_message_handler(callback=self.expenses, commands=['Расходы'])
         dp.register_message_handler(callback=self.add_report, commands=['Добавить_отчет'],
                                     state=None)

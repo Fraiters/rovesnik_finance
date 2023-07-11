@@ -12,8 +12,6 @@ class ExpensesDb:
     def __init__(self):
         self.connection = sqlite3.connect('expenses.db')  # type: Connection
         self.cursor = self.connection.cursor()  # type: Cursor
-        if self.connection:
-            print("База данных 'Расходы' подключена")
 
     def create_table_reports(self):
         """Создание таблицы отчетов в БД"""
